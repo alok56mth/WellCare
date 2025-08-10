@@ -23,7 +23,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("http://localhost:5000/api/v1/user/patient/logout", {
+      .get("https://wellcare-bzyc.onrender.com/api/v1/user/patient/logout", {
         withCredentials: true,
       })
       .then((res) => {
